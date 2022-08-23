@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" />thuoc tinh su dung tieng viet khong bi loi -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>conbozzz</title>
+    <style>
+        #nx {
+            background-color: lightblue;
+            color: red;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+    <p style="color: red;">Con Bò Thạch</p>
+    <img src="https://i-vnexpress.vnecdn.net/2019/08/01/conbo-1564648229-9318-1564649213_680x0.jpg" style="width: 50%; height: 50%; " alt="">
+
+    <ul>
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ul>
+    <ul type="circle">
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ul>
+    <ul type="square">
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ul>
+    <ul type="none">
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ul>
+
+    <ol type="1">
+
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ol>
+
+    <ol type="A">
+        <li>Nguyễn Hoàng Thạch</li>
+        <li>Nguyễn Văn Thịnh</li>
+        <li>Nguyễn Mạnh Thịnh</li>
+
+
+    </ol>
+    <!-- danh sach mo ta dl-definition list/ dt -define an item/ dd-defines describe an item -->
+    <dl style="color: red;">
+        <dt>HTML</dt>
+        <dd>Là viết tắt của Hyper Text Markup Language</dd>
+        <dt>LAN</dt>
+        <dd>LAN là mạng cục bộ viết tắt của Local Area Network</dd>
+    </dl>
+    <h1> đăng nhập diễn</h1>
+    <form action="xuly.php">
+        <label for="Username">Username: </label><br>
+        <input type="text" name="Username"> <br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" name="Password"> <br>
+
+        <input type="button" value="Login" name="login">
+        <input type="button" value="Cancel" name="cancel"> <br> Giới Tính: Nam<input type="radio" name="gioitinh" checked=""> Nữ<input type="radio" name="gioitinh">
+        <p>Bạn Hãy Lựa Chọn môn thể thao yêu thích</p>
+        bóng đá<input type="checkbox" name="ckbd"><br>
+        <input type="checkbox" name="ckcl">cầu lông<br>
+        <input type="checkbox" name="ckbl">bôi lội<br>
+
+        <h1>nhận xét</h1>
+        <textarea name="nx" id="nx" rows="10" cols="30">nội dung nn</textarea><br>
+        <input type="button" value="gửi"><br><br>
+
+
+        <label for="gioitinh">Giới Tính </label>
+        <select name="gioitinh">
+            <option value="aaa">Nam</option>
+            <option value="1">Nữ</option>
+            <option value="2">Khác</option>
+        </select><br>
+        <!-- <input type="submit" name="Submit" onclick='alert(document.getElementById("gioitinh").value)'> -->
+    </form>
+</body>
+
+</html>
