@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta charset="utf-8" />thuoc tinh su dung tieng viet khong bi loi -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>thông tin</title>
+    <style>
+        #fieldset {
+            color: red;
+            background-color: chartreuse;
+            border: 10px solid cornflowerblue;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <form action="xuly.php">
+        <fieldset id="fieldset">
+            <legend style="color:blue">THÔNG TIN</legend>
+            <!-- name: <input type="text " placeholder="Name "><br> age: <input type="number "><br> password: <input type="Password " name="Password " placeholder="Password "><br> data of birth: <input type="text "><br> -->
+
+            <b>
+                <label for="Username ">Username: </label><br>
+                <input type="text " name="Username " placeholder="Username "
+                    style=" box-sizing: border-box; background-origin: padding-box; border: 2px solid cornflowerblue;">
+                <br>
+
+                <label for="Password ">Password:</label><br>
+                <input type="Password " name="Password " placeholder="Password "><br> <br>
+                <label for="Data">Ngày sinh:</label>
+                <input type="Date" name="Data "><br>
+                <input type="button" value="Login" name="login">
+                <input type="button" value="Cancel" name="cancel">
+                <input type="button" value="reset" name="reset">
+                <button type=" button ">reset</button>
+                <br> Giới Tính: Nam
+                <input type="radio " name="gioitinh " checked=" "> Nữ<input type="radio " name="gioitinh ">
+                <p>Bạn Hãy Lựa Chọn môn thể thao yêu thích</p>
+                bóng đá<input type="checkbox " name="ckbd "><br>
+
+                <input type="checkbox " name="ckcl ">cầu lông<br>
+                <input type="checkbox " name="ckbl ">bôi lội<br>
+                <label for="">Lựa Chọn Mùa</label>
+                <input type="color" name="lcm">
+            </b>
+
+        </fieldset>
+        <!-- <label for="Username">Username: </label><br>
+        <input type="text " name="Username "> <br>
+
+        <label for="Password ">Password:</label><br>
+        <input type="password " name="Password "> <br>
+
+        <input type="button " value="Login " name="login ">
+        <input type="button " value="Cancel " name="cancel "> <br> Giới Tính: Nam
+        <input type="radio " name="gioitinh " checked=" "> Nữ<input type="radio " name="gioitinh ">
+        <p>Bạn Hãy Lựa Chọn môn thể thao yêu thích</p>
+        bóng đá<input type="checkbox " name="ckbd "><br>
+        <input type="checkbox " name="ckcl ">cầu lông<br>
+        <input type="checkbox " name="ckbl ">bôi lội<br> -->
+
+
+
+        <!-- <input type="submit " name="Submit " onclick='alert(document.getElementById("gioitinh ").value)'> -->
+    </form>
+</body>
+
+</html>
