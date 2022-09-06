@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- <link rel="stylesheet" href="test.css"> -->
+    <title>CSS</title>
+    <style>
+        /*          
+       thứ tự ưu tiên: 
+         Internal, External 
+        Inline
+        #id - 1000
+        class -10
+        tag -1 
+        */
+        /* ưu tiên 1 */
+        /*         
+        h1#id1.id2 {
+            color: aqua;
+        } */
+        /* ưu tiên 2 */
+        /* #id1.id2 {
+            color: black;
+        } */
+        /* ưu tiên 3 */
+        /*         
+        #id1.id1 {
+            color: blue;
+        } */
+        /* ưu tiên 4 */
+        /*         
+        #id1 {
+            color: brown;
+        } */
+        /* ưu tiên 5 */
+        /* .id2 {
+            color: green;
+        } */
+        /* ưu tiên 6 */
+        /* h1 {
+            color: red;
+        } */
+        /* 
+        Equal Specificity
+        */
+        /* ưu tiên 2 */
+        /* .id4 {
+            color: blue;
+        } */
+        /* ưu tiên 1 */
+        /* .id4 {
+            color: aqua;
+        } */
+        /* h2 {
+            color: blueviolet;
+        } */
+        /* 
+        Universal selector and inherited
+        */
+        /* ưu tiên 1 */
+        /* * {
+            color: brown;
+        } */
+        /* ưu tiên 2 */
+        /* body {
+            color: aliceblue;
+            background-color: rgb(111, 0, 255);
+        } */
+        /* #id5 {
+            color: blanchedalmond;
+        } */
+        /* đặt biến */
+        /* biến cục bộ */
+        
+        h1 {
+            --color-title: red;
+            color: var(--color-title);
+        }
+        
+         :root {
+            --text-color: blue;
+        }
+        /* biến toàn cục */
+        
+        h1 {
+            color: var(--text-color);
+        }
+        
+        h2 {
+            color: var(--text-color);
+        }
+        
+        h3 {
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+
+    thứ tự ưu tiên: 
+         Internal, External 
+        Inline
+        #id - 1000
+        class -10
+        tag -1
+        
+    <h1 style="color: green;">TOP0</h1>
+    <h1 id="id1" class="id2"> TOP1</h1>
+    
+    Equal Specificity
+    
+    <h2 class="id4">TOP 3</h2> -->
+
+    <!-- Universal selector and inherited -->
+
+    <!-- <h3 class="id5">TOP 4</h3> -->
+
+    <!-- đặt biến -->
+
+    <h1>
+        abc
+    </h1>
+    <h2>
+        abc
+    </h2>
+    <h3>
+        abc
+    </h3>
+    <!-- <ol>
+        <li>Internal, External </li>
+        <li>Inline</li>
+        <li>#id</li>
+        <li>class</li>
+        <li>tag</li>
+        <li>Equal Specificity</li>
+        <li>Universal selector and inherited</li>
+
+    </ol> -->
+
+</body>
+
+</html>
